@@ -1,0 +1,54 @@
+.carousel-inner{
+    @include max-screen(sm) {
+        min-height: 370px;
+        clip-path: ellipse(85% 75% at 50% 10%);
+    }
+
+    @include min-screen(lg) {
+        clip-path: ellipse(98% 88% at 50% 10%);        
+    }
+}
+.carousel-item{
+
+    img{
+        width: 100%;
+        max-height: 700px;
+        @media(max-width:768px){
+            min-height: 350px;
+        }
+    }
+    
+    
+    &_text{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        justify-content: space-around;
+        align-items: center;
+        &_t1{
+           font-size: 48px;
+           font-family: $bodoni;
+           color: #fff;
+           margin-bottom: 80px;
+           @media(max-width:768px){
+            font-size: 28px;
+           }
+        }
+        &_t2{
+            font-size: 48px;
+            font-family: $bodoni;
+            color: #DA0F8A;
+            margin-top: 100px;
+            @media(max-width:768px){
+                font-size: 28px;
+            }
+        }
+
+    }
+
+
+}
+.carousel-control-prev, .carousel-control-next{
+    z-index: 0;
+}

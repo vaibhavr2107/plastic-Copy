@@ -1,0 +1,25 @@
+/*=============  Vendor style   ================================*/
+@import "./vendor/bootstrap";
+@import "./vendor/fontawesome";
+
+
+
+/*=================  base scss  ================================*/
+@import "./base/fonts";
+@import "./base/var";
+@import "./base/mixin";
+@import "./base/base";
+@import "./base/theme";
+
+
+
+/*============= Component style ================================*/
+@import "./components/about/about";
+@import "./components/carousel/carousel.scss";
+@import "./components/header/header.scss";
+@import "./components/follow/follow.scss";
+@import "./components/popular_service/popular_service.scss";
+@import "./components/footer/footer.scss";
+@import "./components/accordian/accordian.scss";
+@import "./components/patient-stories/patient-stories.scss";
+@import "./components/hero_image/hero_image.scss"

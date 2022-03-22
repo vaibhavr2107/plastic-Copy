@@ -1,0 +1,51 @@
+.accordian {
+  &_open {
+    background-color: #ffffff;
+    color: #3fc7d6;
+    font-weight: 600;
+    padding: 16px 20px;
+    font-family: "Bodoni Moda";
+    border: 1px solid #3fc7d6;
+    cursor: pointer;
+  }
+  &_close {
+    color: #000;
+    padding: 10px 20px;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    background-color: #fff;
+    border-left: 1px solid #3fc7d6;
+    border-right: 1px solid #3fc7d6;
+
+    &:last-child {
+      border-bottom: 1px solid #3fc7d6;
+    }
+  }
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 100px auto;
+}
+.accordion-header {
+  margin-bottom: 0;
+  font-family: "Open Sans";
+  color: #3fc7d6;
+  font-weight: 500;
+  background: white;
+  border: 1px solid #3fc7d6;
+}
+.accordion-button {
+  color: #3fc7d6;
+}
+.accordion-button:not(.collapsed) {
+  color: #35dbef;
+  background-color: #dadada0d;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+  
+}

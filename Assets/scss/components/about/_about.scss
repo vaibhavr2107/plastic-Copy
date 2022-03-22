@@ -1,0 +1,113 @@
+.about {
+  display: 100%;
+  max-width: 1080px;
+  margin: auto;
+  padding: 20px;
+
+  &__h1 {
+    color: $cerrlean-frost;
+    font-family: "Bodoni Moda",serif;
+    font-size: 48px;
+    padding-bottom: 5px;
+    line-height: 100%;
+    border-bottom: 2px solid $cerrlean-frost;
+    margin-bottom: 20px;
+  }
+
+  
+  &__p {
+    font-size: 22px;
+    font-family: $openSans;
+    margin-bottom: 30px;
+  }
+  &__reviews {
+    display: flex;
+    
+    width: 100%;
+    @media(max-width:768px){
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+    }
+    &_person {
+      display: flex;
+      width: 25%;
+      max-width: 400px;
+      min-height: 350px;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid #333;
+      @media(max-width: 768px){
+        width: 100%;
+      }
+      &_1 {
+        width: 100%;
+        background: transparent;
+        min-height: 400px;
+        background-repeat: no-repeat;
+      background-size: cover;
+      }
+      &_2 {
+        display: none;
+        flex-direction: column;
+        
+        justify-content: center;
+        margin: auto;
+        width: 0%;
+        background: rgb(216, 216, 216);
+        min-height: 400px;
+        &_heading{
+           font-size: 26px;
+           font-family: $bodoni; 
+        }
+        &_para{
+          font-size: 16px;
+          font-family: $openSans; 
+        }
+
+      }
+
+      &:hover {
+        width: 50%;
+        @media(max-width:768px){
+          width: 100%; 
+        }
+        .box1 {
+          width: 50%;
+          padding: 10px;
+        }
+        .box2 {
+          display: flex;
+         
+          width: 50%;
+          padding: 10px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      justify-content: center;
+      > div {
+        width: 100%;
+      }
+    }
+  }
+  .bg-1{
+    background-image: url("../images/img-1.png");
+  }
+  .bg-2{
+    background-image: url("../images/img-2.png");
+  }
+  .bg-3{
+    background-image: url("../images/img-3.png");
+  }
+  .bg-4{
+    background-image: url("../images/img-4.png");
+  }
+  &__seemore {
+    width: 100%;
+    background-color: #387386;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+    font-size: 26px;
+  }
+}

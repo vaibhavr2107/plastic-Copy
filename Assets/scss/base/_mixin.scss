@@ -1,0 +1,203 @@
+// BREAKPOINTS (Media Queries) =============================================== *
+$breakpoints: ( // Matched to Bootstrap $grid-breakpoints variables -------- *
+    // Extra small screen / phone
+    xs: 0,
+    // Small screen / phone
+    sm: 576px,
+    // Medium screen / tablet
+    md: 768px,
+    // Large screen / desktop
+    lg: 992px,
+    // Extra large screen / wide desktop
+    xl: 1200px);
+
+// MEDIA QUERIES =============================================== *
+// Min-width
+@mixin min-screen($breakpoint) {
+    // Retrieves the value from the key
+    $value: map-get($breakpoints, $breakpoint);
+
+    // If the key exists in the map
+    @if $value !=null {
+
+        // Prints a media query based on the value
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+        @warn "No value could be retrieved from `#{$breakpoint}`. "+"Make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+// Max-width
+@mixin max-screen($breakpoint) {
+    // Retrieves the value from the key
+    $value: map-get($breakpoints, $breakpoint);
+
+    // If the key exists in the map
+    @if $value !=null {
+
+        // Prints a media query based on the value
+        @media (max-width: $value) {
+            @content;
+        }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+        @warn "No value could be retrieved from `#{$breakpoint}`. "+"Make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+//Media queries between breakpoints
+@mixin breakpoint-between($lower, $upper) {
+
+    // If both the lower and upper breakpoints exist in the map.
+    @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+        // Get the lower and upper breakpoints.
+        $lower-breakpoint: map-get($breakpoints, $lower);
+        $upper-breakpoint: map-get($breakpoints, $upper);
+
+        // Write the media query.
+        @media (min-width: $lower-breakpoint) and (max-width: $upper-breakpoint) {
+            @content;
+        }
+
+        // If one or both of the breakpoints don't exist.
+    }
+
+    @else {
+
+        // If lower breakpoint is invalid.
+        @if (map-has-key($breakpoints, $lower)==false) {
+            // Log a warning.
+            @warn 'Your lower breakpoint was invalid: #{$lower}.';
+        }
+
+        // If upper breakpoint is invalid.
+        @if (map-has-key($breakpoints, $upper)==false) {
+            // Log a warning.
+            @warn 'Your upper breakpoint was invalid: #{$upper}.';
+        }
+    }
+}
+
+
+
+@mixin team-address {
+
+    margin-bottom: 50px;
+
+    h5 {
+        color: $paint-chip;
+        font-size: 17px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    ul.address_list {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+
+        li {
+            list-style: none;
+            color: $grey44;
+            font-size: 17px;
+            line-height: 20px;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 45px;
+            max-width: 100%;
+
+            i {
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: $paint-chip;
+                padding: 5px 5px;
+                border-radius: 3px;
+                border: 2px $paint-chip solid;
+            }
+
+            i.fa-phone {
+                transform: rotate(89deg);
+            }
+        }
+    }
+}
+
+@mixin btn-schedule {
+    display: flex;
+    height: 105px;
+    border: 2px $bluebarry solid;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 26px;
+    color: $black;
+    text-decoration: none;
+    line-height: 32px;
+    font-family: $arimo;
+
+    i {
+        font-size: 35px;
+        color: $bluebarry;
+        padding-left: 10px;
+    }
+
+    &:hover {
+        background: $bluebarry;
+        color: $white;
+
+        i {
+            color: $white;
+        }
+
+    }
+
+    @include max-screen(lg) {
+        font-size: 20px;
+    }
+
+}
+@mixin follow-heading{
+    font-size: 18px; font-weight: bold; font-family: $openSans; margin-bottom: 20px;
+}
+@mixin equal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    
+    @media (max-width:768px ) {
+        width: 100%;
+    }
+}
+
+@mixin sm-100{
+    @media(max-width:768px){
+        width: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+@mixin btn{
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid $magenta-pink;
+    color: #000;
+    background-color: #fff;
+    font-size: 22px;
+    text-align: left;
+    font-weight: 600;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
