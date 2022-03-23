@@ -1,7 +1,11 @@
 .hero_image{
     width: 100%;
     max-height: 700px;
-    clip-path: ellipse(90% 100% at 50% 0%);
+    clip-path: ellipse(80% 100% at 50% 0%);
     margin-bottom: 40px;
+
+    @media(max-width:768px){
+        height: 350px;
+    }
     
 }

@@ -164,3 +164,39 @@
         max-width: 1058px;
     }
 }
+
+
+.breadcrumbs{display: none;}
+@media(min-width:768px){
+.breadcrumbs{
+    width: 100%;
+    max-width: calc(1020px + 40px);
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__links{
+        color: $black;
+        font-size: 1.2rem;  // 1rem = 16px
+        font-weight: 600;
+
+        &-i{
+            font-size: 0.8rem;
+            color: $black;
+            border: 3px solid $black;
+            padding: 3px;
+            margin-left: 5px;
+            border-radius: 2px;
+        }
+
+        &.active{
+            color: $cerrlean-frost;
+        }
+    }
+}
+}

@@ -1,0 +1,79 @@
+/* Meet the team Section */
+.meet_the_team {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   max-width: calc(1020px + 40px);
+   padding: 20px;
+   margin: auto;
+
+   /* Heading & para */
+   &-heading {
+      color: $paint-chip;
+      font-family: "Bodoni Moda", serif;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      border-bottom: 2px solid $paint-chip;
+      margin-bottom: 30px;
+   }
+
+   &-para {
+      font-size: 1.4rem;
+      margin-bottom: 40px;
+   }
+
+   /* Surgical & Non-surgical*/
+
+   &__surgical , &__nonsurgical{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      margin: 50px 0;
+      
+
+      &__member {
+         position: relative;
+         max-width: calc(25% - 8px);
+         border-radius: 35px;
+         overflow: hidden;
+         margin-bottom: 15px;
+         @media(max-width:768px){
+            max-width: calc(50% - 8px);
+        }
+         
+
+         &-inlineborder {
+            position: absolute;
+            top: 0;
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            margin: 20px;
+            border-radius: 35px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+         }
+
+         &-name {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: $cerrlean-frost;
+            color: $white;
+            z-index: 3;
+            text-align: center;
+            padding: 10px 30px;
+            @media(max-width:768px){
+               font-size: 0.8rem;
+            }
+         }
+      }
+    }
+
+    /* Non Surgical */
+    &__nonsurgical{
+        gap: 8px;
+        justify-content: flex-start;
+    }
+
+}
