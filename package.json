@@ -42,7 +42,7 @@
 			"@babel/preset-env"
 		]
 	},
-	"author": "Lalit Gour",
+	"author": "Vaibhav Ramawat",
 	"license": "ISC",
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.15.4",
