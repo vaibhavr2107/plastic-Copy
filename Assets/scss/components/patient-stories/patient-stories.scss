@@ -17,9 +17,7 @@
   &__btn {
     @include btn;
 
-    &:hover {
-      box-shadow: 1px 1px $magenta-pink;
-    }
+    
 
     i {
       color: $magenta-pink;
