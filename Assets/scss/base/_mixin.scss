@@ -205,7 +205,8 @@ $breakpoints: ( // Matched to Bootstrap $grid-breakpoints variables -------- *
     display: flex;
     align-items: center;
     &:hover {
-        box-shadow: 1px 1px $magenta-pink;
+        
+        box-shadow: 1px 1px 6px $magenta-pink;
       }
 }
 
