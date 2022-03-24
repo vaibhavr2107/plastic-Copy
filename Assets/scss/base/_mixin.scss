@@ -184,6 +184,11 @@ $breakpoints: ( // Matched to Bootstrap $grid-breakpoints variables -------- *
         margin: 10px;
     }
 }
+
+
+
+
+
 @mixin btn{
     width: 100%;
     max-width: 300px;
@@ -201,3 +206,35 @@ $breakpoints: ( // Matched to Bootstrap $grid-breakpoints variables -------- *
     align-items: center;
 }
 
+@mixin headingwithborder{
+      color: $paint-chip;
+      font-family: "Bodoni Moda", serif;
+      font-size: 2.5rem;
+      line-height: 1.2;
+      border-bottom: 2px solid $paint-chip;
+      margin-bottom: 30px;
+}
+
+@mixin paragraph{
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+}
+
+@mixin container-1020{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: calc(1020px + 40px);
+    padding: 20px;
+    margin: auto;
+}
+
+
+@mixin nflex{   //flex with normally used properties
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+    position: relative;
+} 

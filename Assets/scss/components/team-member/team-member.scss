@@ -1,0 +1,161 @@
+.team-member{
+
+    @include container-1020;
+
+
+    /* Team Member heading & Subheading */
+
+    &-heading{
+      font-size: 3.6rem;
+      font-family: $bodoni;
+      color: $cerrlean-frost;
+    }
+
+    &-subheading{
+        font-family: $openSans;
+        font-size: 1.8rem;
+        color: $cerrlean-frost;
+        margin-bottom: 40px;
+      
+    }
+    
+
+    /* Team Member About heading & para */
+
+    &__About{
+        &-heading{
+            @include headingwithborder;
+        }
+        &-para{
+            @include paragraph;
+        } 
+    }
+
+    /* Team Member Video */
+
+    &__video{
+      @include nflex;
+      
+      /* Team Member Video holder or banner*/ 
+      &__banner{
+         width: 40%;
+         position: relative;
+        &-img{
+           max-height: 296px;
+        }
+        &-play{
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            margin: auto;
+            color: $white;
+            font-size: 2.5rem;
+            cursor: pointer;
+           
+        }
+        &-cast{
+            
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: $white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+      }
+
+
+     /* Team Member Video para */
+      &__para{
+        width: 50%;
+        
+        &-withquote{
+            color: $medium-dark-shed-cyan-blue;
+            font-size: 1.6rem;
+            font-family: $bodoni;
+        }
+      }
+
+
+      /* Team Member Video bg*/
+      &-bg{
+        position: absolute;
+        width: calc(100vw * 2);
+        left: -50%;
+        right: -50%;
+        height: calc(100% + 80px);
+        z-index: -1;
+        background: $grey94;
+    }
+
+
+    }
+
+    /* Team Member Details */
+
+    &__details{
+
+        @include nflex;
+        align-items: flex-start;
+
+        &__exp_edu{
+
+           width: 60%;
+           padding-right: 20px;
+
+           &-exp{
+               &-heading{
+                   @include headingwithborder;
+               }
+               &-para{
+                   @include paragraph;
+               }
+           }
+
+           &-edu{
+
+            &-heading{
+                @include headingwithborder;
+            }
+            &-ul{
+                list-style: none;
+                margin: 0;
+                &-list{
+                    margin: 15px 0;
+                    &-heading{color: $cerrlean-frost; font-size: 1.2rem; font-weight: 500;}
+                    &-para{color: $black; font-size: 1.2rem;}
+                }
+            }
+
+
+
+
+           }
+
+        }
+
+
+
+        &__loc_contact{ 
+
+            width: 40%;
+            padding-left: 20px;
+
+            &-btn{
+                @include btn;
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+}
