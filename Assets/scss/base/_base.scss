@@ -37,6 +37,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;  
+    overflow-x: hidden;
      
 }
 
@@ -97,7 +98,4 @@ p{
 a{
     color: $dark-blue;
      text-decoration: none;
-}
-main{
-    overflow-x: hidden;
 }

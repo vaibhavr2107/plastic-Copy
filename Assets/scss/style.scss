@@ -14,14 +14,17 @@
 
 
 /*============= Component style ================================*/
-@import "./components/about/about";
-@import "./components/carousel/carousel.scss";
-@import "./components/header/header.scss";
-@import "./components/follow/follow.scss";
-@import "./components/popular_service/popular_service.scss";
-@import "./components/footer/footer.scss";
-@import "./components/accordian/accordian.scss";
-@import "./components/patient-stories/patient-stories.scss";
-@import "./components/hero_image/hero_image.scss";
-@import "./components/meet-team/meet-team.scss";
-@import "./components/team-member/team-member.scss";
+@import "./components/about";
+@import "./components/carousel";
+@import "./components/header";
+@import "./components/follow";
+@import "./components/popular_service";
+@import "./components/footer";
+@import "./components/accordian";
+@import "./components/patient-stories";
+@import "./components/hero_image";
+@import "./components/meet-team";
+
+@import "./components/team-member";
+@import "./components/location";
+@import "./components/location-detail";

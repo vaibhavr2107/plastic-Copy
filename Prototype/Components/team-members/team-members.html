@@ -23,7 +23,7 @@
     <div class="team-member__video">
         <div class="team-member__video__banner">
           <img class="team-member__video__banner-img" src="../../images/video-banner.webp" alt="video image">
-          <i class="fas fa-play team-member__video__banner-play" role="button" id="play"></i>
+          <i class="fas fa-play team-member__video__banner-play" role="button" id="play"  data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
           <i class="fab fa-chromecast team-member__video__banner-cast"  role="button" id="cast"></i>
         </div>
         <div class="team-member__video__para">
@@ -110,8 +110,23 @@
 
     </div>
 
-    <div class="team-member__videoplay">
-      <video src="../../videos/doc-video.mp4" class="team-member__videoplay-video" controls autoplay playinsline loop></video>
-       </div>
+    
+       <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="close"></button>
+      </div>
+      <div class="modal-body">
+        
+          <video id="videoplay" src="../../videos/doc-video.mp4" class="team-member__videoplay-video" controls autoplay playinsline loop></video>
+          
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 </section>

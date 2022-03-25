@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="template of Location" />
+      <meta name="author" content="Vaibhav" />
+      <title>Meet Team</title>
+      <link
+         rel="icon"
+         type="image/x-icon"
+         href="../../images/16x16-SLUHN.ico"
+      />
+      <link
+         rel="apple-touch-icon"
+         href="../../images/star_apple-touch-icon-192x192.png"
+      />
+      <!-- inject:css -->
+      <link rel="stylesheet" href="../../css/style.min.css">
+      <!-- endinject -->
+   </head>
+   <body>
+
+
+      <header><nav class="navbar">
+  <div class="navbar_1">
+    <img
+      class="navbar_1_img ms"
+      src="../../images/header-logo.png"
+      width="70px" alt="header_logo"
+    />
+    <i class="fas fa-user-circle"></i>
+    <a href="#"class="navbar_1_links lg">Create Account |</a>
+    <a href="#"class="navbar_1_links lg">Sign in |</a>
+    <i class="fas fa-question"></i>
+  </div>
+  <div class="navbar_2 lg">
+    <a href="homepage.html" class="navbar_2_logo"><img src="../../images/header-logo.png"  width="173px"  alt="header_2_logo"/></a>
+    <div class="navbar_2_menu">
+      <div class="navbar_2_menu_line"></div>
+      <div class="navbar_2_menu_line"></div>
+      <div class="navbar_2_menu_line"></div>
+    </div>
+  </div>
+  <div class="navbar_3 navbar_3_align ms">
+    <h5>Plastic & Reconstructive Surgery</h5>
+  </div>
+
+  <div class="navbar_3 lg">
+    <a href="#"class="navbar_3_gap navbar_3_links">Plastic & Reconstructive Surgery |</a>
+    
+    <a href="patient-story-page.html"class="navbar_3_links">About</a>
+    <a href="meet-the-team.html"class="navbar_3_links">Meet the Team</a>
+    <a href="#"class="navbar_3_services navbar_3_links">Services</a>
+    <a href="locations.html"class="navbar_3_links">Locations</a>
+    <a href="#"class="navbar_3_links">Gallery</a>
+    <a href="#"class="navbar_3_links">Contact Us</a>
+  
+  </div>
+
+  <div class="navbar_3_services_list">
+    <div class="navbar_3_services_list_center">
+      <a href="#">Face</a>
+      <a href="#">Skin</a>
+      <a href="#">Body</a>
+      <a href="#">Plastic Surgery</a>
+      <a href="#">Non Surgical</a>
+    </div>
+  </div>
+  <div class="navbar_4 menu ms">
+    <div class="navbar_4_menu_ul">
+      <div class="navbar_4_menu_ul_li">
+        <a href="#">About</a>
+        <a href="#">Meet the Team</a>
+        <a href="#">Services</a>
+        <a href="#">Locations</a>
+        <a href="#">Contact Us</a>
+        
+      </div>
+      <div class="navbar_4_menu" id="menu">
+        <div class="navbar_4_menu_line"></div>
+        <div class="navbar_4_menu_line"></div>
+        <div class="navbar_4_menu_line"></div>
+      </div>
+
+    </div>
+  </div>
+</nav>
+</header>
+      <main id="main">
+         <section class="hero">
+         <div class="hero_image">
+             <img src="../../images/hands.jpg" class="hero_image-img" alt="hero-images">
+         </div>
+         </section>
+         <!-- breadcrumbs link -->
+         <nav class="breadcrumbs">
+             <a href="#" role="link" class="breadcrumbs__links">SLUHN Home ></a>
+             <a href="#" role="link" class="breadcrumbs__links">Plastic & Reconstructive Surgery ></a>
+             <a href="#" role="link" class="breadcrumbs__links active">Location</a>
+         </nav>
+
+         <section class="location">
+             <div class="location__heading">
+                 <h3 class="location__heading-h3">Locations</h3>
+                 <button id="filter_open" class="location__heading-btn" aria-label="show" aria-pressed="false">
+                     <i class="fas fa-sort-amount-down"></i>
+                 </button>
+
+                 <!--location__heading-filter -->
+                 <div class="location__heading-filter" id="location_filter">
+                     <div class="location__heading-filter-body">
+                         <!-- 1-Heading -->
+                         <div class="location__heading-filter-body-1">
+                             <h3 class="location__heading-filter-body-1-h3">Sort By</h3>
+                             <div class="location__heading-filter-body-1-img">
+                                 <button aria-label="filter">
+                                     <img src="../../images/sort.png" class="filter-img" width="32px" height="32px"
+                                         alt="filter_img" />
+                                 </button>
+                             </div>
+                         </div>
+                         <!-- 3-btns -->
+
+                         <div class="location__heading-filter-body-3">
+                             <p>Distance</p>
+                         </div>
+
+                         <!-- 4- Cancel & Apply btn with top border -->
+                         <div class="location__heading-filter-body-border"></div>
+
+                         <div class="location__heading-filter-body-4">
+                             <button class="location__heading-filter-body-4-btn" id="filter_close" aria-label="hide">
+                                 Cancel
+                             </button>
+                             <button class="location__heading-filter-body-4-btn" aria-label="Apply">
+                                 Apply
+                             </button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <ul class="location__ul">
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+                 <li class="location__ul-list">
+                     <h3 class="location__ul-list-heading">
+                         St. Luke's Plastic & Reconstructive Surgery - Bethlehem
+                     </h3>
+                     <address class="location__ul-list-address">
+                         <i class="fas fa-map-marked-alt location__ul-list-address-icon"></i>74
+                         West Broad Street, Suite 170 Bethlehem, PA, 18018<br /><i
+                             class="fas fa-phone-square-alt location__ul-list-address-icon"></i>
+                         <a class="location__ul-list-address-link">Phone 484-526-1260</a>
+                     </address>
+                 </li>
+             </ul>
+         </section>
+      </main>
+      <footer><nav class="footer">
+    <div class="footer_1">
+      <img src="../../images/footer_logo.svg" class="footer_1_img" alt="footer_logo"/>
+      <h6 class="footer_1_text"></h6></div>
+    <div class="footer_2">
+        <ul class="footer_2_ul">
+            <li> <a href="#">About</a></li>
+            <li> <a href="#">Meet the team</a></li>
+            <li> <a href="#">Services</a></li>
+        </ul>
+        <ul class="footer_2_ul">
+            <li> <a href="#">Location</a></li>
+            <li> <a href="#">Gallery</a></li>
+            <li> <a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="footer_3">
+        <a href="#">EOE</a>
+        <a href="#">Privacy</a>
+        <a href="#">Term of use</a>
+        <a href="#">public notice</a>
+    </div>
+</nav></footer>
+
+      
+
+      <!-- inject:js -->
+      <script src="../../js/main.min.js"></script>
+      <!-- endinject -->
+   </body>
+</html>
